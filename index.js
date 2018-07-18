@@ -28,8 +28,8 @@ ace.unshift(name);
 return ace;
 }
 function removeLastKitten() {
-  var kittens2 = [];
-    kittens.pop();
-  var kittens2 = kittens.concat(kittens2);
-  return kittens2;
+return kittens.slice(0, kittens.length - 1)
+}
+function removeFirstKitten(){
+return kittens.slice(1)  
 }
